@@ -1,0 +1,6 @@
+{
+  "name": "Rumah Aqiqah Semarang",
+  "description": "Rumah Aqiqah Semarang — layanan aqiqah, olahan menu pilihan, dan nasi box rapi untuk syukuran keluarga di Candisari & Kota Semarang. Konsultasi langsung via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Rumah Aqiqah Semarang — Layanan Aqiqah &amp; Hidangan Keluarga</title>
+  <meta
+    name="description"
+    content="Rumah Aqiqah Semarang — layanan aqiqah, olahan menu pilihan, dan nasi box rapi untuk syukuran keluarga di Candisari &amp; Kota Semarang. Konsultasi langsung via WhatsApp."
+  />
+
+  <!-- OpenGraph & WhatsApp Share Card -->
+  <meta property="og:title" content="Rumah Aqiqah Semarang — Layanan Aqiqah &amp; Hidangan Keluarga" />
+  <meta
+    property="og:description"
+    content="Rumah Aqiqah Semarang — layanan aqiqah, olahan menu pilihan, dan nasi box rapi untuk syukuran keluarga di Candisari &amp; Kota Semarang. Konsultasi langsung via WhatsApp."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#181614" />
+
+  <!-- Inline SVG Favicon (Zero External Asset Dependency) -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23181614'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23E9D8BA' font-family='Georgia,serif' font-size='28' font-weight='700'%3ERA%3C/text%3E%3C/svg%3E"
+  />
+
+  <!-- Tailwind CSS Play CDN (Single-File Static Architecture) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Playfair Display (Editorial Display) + Plus Jakarta Sans (Body & Numerals) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              canvas: '#FAF8F4',
+              surface: '#F1ECE3',
+              ink: '#181614',
+              muted: '#575049',
+              gold: '#9F6A1E',
+              goldHover: '#845616',
+              goldSoft: '#E9D8BA',
+              forest: '#1E352B',
+              wa: '#15803D',
+              waHover: '#166534',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    .headline-balance {
+      text-wrap: balance;
+    }
+
+    .package-card {
+      background-color: #FFFFFF;
+      border: 1px solid rgba(24, 22, 20, 0.09);
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .package-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(159, 106, 30, 0.45);
+      box-shadow: 0 16px 32px -16px rgba(24, 22, 20, 0.14);
+    }
+
+    .focus-ring:focus-visible {
+      outline: 2px solid #9F6A1E;
+      outline-offset: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      .package-card,
+      .package-card:hover {
+        transition: none;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-brand-canvas text-brand-ink font-sans antialiased selection:bg-brand-goldSoft selection:text-brand-ink">
+
+  <!-- Skip Link for Accessibility -->
+  <a
+    href="#konten-utama"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-brand-ink focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm"
+  >
+    Langsung ke konten utama
+  </a>
+
+  <!-- Header: Clean 3-Zone Top Bar Contract -->
+  <header class="sticky top-0 z-40 bg-brand-canvas/95 backdrop-blur-md border-b border-brand-ink/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3 md:gap-8">
+      <!-- Zone 1: Single-line Brand Wordmark -->
+      <a
+        href="#"
+        id="brand-name"
+        class="font-serif font-semibold text-base sm:text-xl tracking-tight text-brand-ink whitespace-nowrap truncate min-w-0 focus-ring rounded"
+      >
+        Rumah Aqiqah Semarang
+      </a>
+
+      <!-- Zone 2: Concise Single-Line Navigation Links -->
+      <nav aria-label="Navigasi utama" class="hidden md:flex items-center gap-6 text-sm font-medium text-brand-muted">
+        <a href="#keunggulan" class="hover:text-brand-ink transition-colors whitespace-nowrap shrink-0 focus-ring rounded">Keunggulan</a>
+        <a href="#paket" class="hover:text-brand-ink transition-colors whitespace-nowrap shrink-0 focus-ring rounded">Koleksi Paket</a>
+        <a href="#kalkulator" class="hover:text-brand-ink transition-colors whitespace-nowrap shrink-0 focus-ring rounded">Estimasi Box</a>
+        <a href="#testimoni" class="hover:text-brand-ink transition-colors whitespace-nowrap shrink-0 focus-ring rounded">Testimoni</a>
+        <a href="#lokasi" class="hover:text-brand-ink transition-colors whitespace-nowrap shrink-0 focus-ring rounded">Lokasi</a>
+      </nav>
+
+      <!-- Zone 3: Single Primary Action + Mobile Menu Trigger -->
+      <div class="flex items-center gap-2 shrink-0">
+        <a
+          id="nav-wa-btn"
+          href="https://wa.me/6285100402001"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="bg-brand-ink hover:bg-brand-forest text-white text-xs sm:text-sm font-semibold px-3 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-colors whitespace-nowrap shrink-0 focus-ring"
+        >
+          Konsultasi WA
+        </a>
+
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-label="Buka menu navigasi"
+          aria-expanded="false"
+          aria-controls="mobile-nav-panel"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-brand-ink/15 text-brand-ink hover:bg-brand-surface transition-colors focus-ring"
+        >
+          <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav
+      id="mobile-nav-panel"
+      aria-label="Navigasi seluler"
+      class="hidden md:hidden border-t border-brand-ink/10 bg-brand-canvas px-4 py-3"
+    >
+      <div class="flex flex-col gap-1 text-sm font-medium text-brand-ink">
+        <a href="#keunggulan" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-brand-surface">Keunggulan</a>
+        <a href="#paket" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-brand-surface">Koleksi Paket</a>
+        <a href="#kalkulator" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-brand-surface">Estimasi Box</a>
+        <a href="#testimoni" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-brand-surface">Testimoni</a>
+        <a href="#lokasi" class="mobile-nav-link py-2.5 px-3 rounded-lg hover:bg-brand-surface">Lokasi</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="konten-utama">
+    <!-- Hero Section: Editorial 2-Column Split + Culinary Collage -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-14 lg:py-20">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
+        <!-- Left Copy Column -->
+        <div class="lg:col-span-6 flex flex-col justify-center space-y-6">
+          <div class="flex flex-wrap items-center gap-2 text-xs font-medium text-brand-muted">
+            <span id="hero-kicker">Layanan Aqiqah &amp; Nasi Box</span>
+            <span aria-hidden="true">·</span>
+            <span id="brand-tagline">Candisari, Kota Semarang</span>
+          </div>
+
+          <h1
+            class="font-serif headline-balance text-4xl sm:text-5xl lg:text-[3.35rem] font-semibold tracking-tight leading-[1.1] text-brand-ink"
+          >
+            Hidangan Penuh <span class="italic font-normal text-brand-gold">Makna</span>,
+            Disajikan dengan Cermat
+          </h1>
+
+          <p class="text-brand-muted text-base leading-relaxed max-w-xl" id="hero-desc">
+            Setiap paket aqiqah, olahan menu pilihan, dan nasi box kami dimasak fresh di hari yang sama menjelang
+            jadwal pengantaran—bukan stok inap—agar bumbu meresap, hidangan tetap hangat, dan kemasan tiba rapi untuk
+            momen syukuran keluarga Anda di Semarang.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <a
+              id="hero-wa-btn"
+              href="https://wa.me/6285100402001"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center bg-brand-gold hover:bg-brand-goldHover text-white font-semibold text-sm px-6 py-3.5 rounded-lg transition-colors whitespace-nowrap shrink-0 focus-ring"
+            >
+              Pesan &amp; Cek Jadwal WA
+            </a>
+            <a
+              href="#kalkulator"
+              class="inline-flex items-center justify-center gap-2 bg-white hover:bg-brand-surface text-brand-ink border border-brand-ink/15 font-semibold text-sm px-6 py-3.5 rounded-lg transition-colors whitespace-nowrap shrink-0 focus-ring"
+            >
+              <span>Hitung Estimasi Box</span>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Culinary Collage -->
+        <div class="lg:col-span-6 grid grid-cols-2 gap-4 items-stretch">
+          <div class="flex flex-col gap-4">
+            <div class="overflow-hidden rounded-2xl border border-brand-ink/10 bg-brand-surface h-48 sm:h-56">
+              <img
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80"
+                alt="Sajian sate dan olahan daging bakar istimewa"
+                referrerpolicy="no-referrer"
+                loading="eager"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Olahan Utama Segar"
+              />
+            </div>
+            <div class="overflow-hidden rounded-2xl border border-brand-ink/10 bg-brand-surface h-40 sm:h-44">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+                alt="Tata saji hidangan syukuran dan nasi box"
+                referrerpolicy="no-referrer"
+                loading="eager"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Sajian Syukuran Keluarga"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 pt-6">
+            <div class="overflow-hidden rounded-2xl border border-brand-ink/10 bg-brand-surface h-40 sm:h-44">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                alt="Hidangan daging berbumbu rempah"
+                referrerpolicy="no-referrer"
+                loading="eager"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Bumbu Rempah Pilihan"
+              />
+            </div>
+            <div class="overflow-hidden rounded-2xl border border-brand-ink/10 bg-brand-surface h-48 sm:h-56">
+              <img
+                src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80"
+                alt="Pelengkap nasi dan lauk siap santap"
+                referrerpolicy="no-referrer"
+                loading="eager"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Nasi Box Siap Bagikan"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Width Key Proof Strip Below Hero Split -->
+      <div class="mt-12 pt-8 border-t border-brand-ink/10 grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div>
+          <p class="font-sans text-xl sm:text-2xl font-bold tracking-tight text-brand-ink tabular-nums">100% Fresh Hari-H</p>
+          <p class="text-xs text-brand-muted mt-1 leading-relaxed">Dimasak fresh di hari yang sama, tanpa stok inap</p>
+        </div>
+        <div>
+          <p class="font-sans text-xl sm:text-2xl font-bold tracking-tight text-brand-ink tabular-nums">1–2 Varian Fresh</p>
+          <p class="text-xs text-brand-muted mt-1 leading-relaxed">Olahan menu pilihan dimasak fresh di hari yang sama agar rasa &amp; aroma tetap terjaga</p>
+        </div>
+        <div>
+          <p class="font-sans text-xl sm:text-2xl font-bold tracking-tight text-brand-ink tabular-nums">Mulai Rp1,28 Jt</p>
+          <p class="text-xs text-brand-muted mt-1 leading-relaxed">Paket transparan dari hemat hingga lengkap</p>
+        </div>
+        <div>
+          <p class="font-sans text-xl sm:text-2xl font-bold tracking-tight text-brand-ink tabular-nums">Area Semarang</p>
+          <p class="text-xs text-brand-muted mt-1 leading-relaxed">Pengantaran tepat waktu dari dapur Candisari</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Strip Keunggulan & Standar Layanan -->
+    <section id="keunggulan" class="scroll-mt-20 bg-brand-surface/75 border-y border-brand-ink/10 py-14">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="space-y-1.5">
+            <p class="font-sans text-sm font-bold text-brand-gold tabular-nums">01.</p>
+            <h2 class="font-semibold text-sm text-brand-ink">Standar Higienis &amp; Halal</h2>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Bahan baku terpilih diolah bersih mengikuti standar dapur yang konsisten untuk acara keluarga.
+            </p>
+          </div>
+          <div class="space-y-1.5">
+            <p class="font-sans text-sm font-bold text-brand-gold tabular-nums">02.</p>
+            <h2 class="font-semibold text-sm text-brand-ink">Kemasan Rapi &amp; Layak Tamu</h2>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Box disusun rapi, bersih, dan praktis dibagikan kepada keluarga, tetangga, maupun relasi kerja.
+            </p>
+          </div>
+          <div class="space-y-1.5">
+            <p class="font-sans text-sm font-bold text-brand-gold tabular-nums">03.</p>
+            <h2 class="font-semibold text-sm text-brand-ink">Pilihan Paket Transparan</h2>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Tersedia pilihan paket ekonomis, favorit dua menu, hingga porsi besar yang mudah disesuaikan anggaran.
+            </p>
+          </div>
+          <div class="space-y-1.5">
+            <p class="font-sans text-sm font-bold text-brand-gold tabular-nums">04.</p>
+            <h2 class="font-semibold text-sm text-brand-ink">Koordinasi Cepat via WA</h2>
+            <p class="text-xs text-brand-muted leading-relaxed">
+              Diskusi menu, jumlah box, tanggal acara, dan titik antar langsung bersama admin tanpa proses rumit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Koleksi Paket / Menu Unggulan -->
+    <section id="paket" class="scroll-mt-20 max-w-6xl mx-auto px-4 sm:px-6 py-20">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div class="space-y-1.5">
+          <p class="text-xs font-semibold text-brand-gold">Koleksi Pilihan</p>
+          <h2 class="font-serif headline-balance text-3xl sm:text-4xl font-semibold text-brand-ink">
+            Paket &amp; Menu Unggulan
+          </h2>
+          <p class="text-sm text-brand-muted">
+            Pilih kategori paket untuk melihat opsi hidangan yang sesuai kebutuhan acara Anda.
+          </p>
+        </div>
+
+        <!-- Interactive Segmented Filter Control -->
+        <div
+          id="filter-buttons"
+          role="group"
+          aria-label="Filter kategori paket"
+          class="inline-flex items-center gap-1 p-1 bg-brand-surface rounded-lg border border-brand-ink/10 self-start md:self-auto"
+        >
+          <button
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+            class="filter-tab bg-brand-ink text-white text-xs font-semibold px-3.5 py-2 rounded-md transition-colors whitespace-nowrap shrink-0 focus-ring"
+          >
+            Semua Paket
+          </button>
+          <button
+            type="button"
+            data-filter="aqiqah"
+            aria-pressed="false"
+            class="filter-tab text-brand-muted hover:text-brand-ink text-xs font-semibold px-3.5 py-2 rounded-md transition-colors whitespace-nowrap shrink-0 focus-ring"
+          >
+            Paket Aqiqah
+          </button>
+          <button
+            type="button"
+            data-filter="box"
+            aria-pressed="false"
+            class="filter-tab text-brand-muted hover:text-brand-ink text-xs font-semibold px-3.5 py-2 rounded-md transition-colors whitespace-nowrap shrink-0 focus-ring"
+          >
+            Nasi Box &amp; Acara
+          </button>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="paket-list" data-testid="paket-list">
+        <!-- Paket 1 -->
+        <article
+          data-category="aqiqah"
+          class="paket-item package-card rounded-2xl overflow-hidden flex flex-col justify-between"
+        >
+          <div>
+            <div class="h-48 overflow-hidden bg-brand-surface">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+                alt="Paket Aqiqah Hemat — olahan utama daging berbumbu"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Paket Aqiqah Hemat"
+              />
+            </div>
+            <div class="p-5 space-y-2">
+              <p class="text-xs text-brand-muted">Paket Aqiqah · Pilihan Ekonomis</p>
+              <h3 class="font-serif text-xl font-semibold text-brand-ink">Paket Aqiqah Hemat</h3>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                Solusi praktis untuk tasyakuran keluarga dengan pilihan olahan menu utama yang sedap dan rapi.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-3 border-t border-brand-ink/10 flex items-center justify-between gap-2">
+            <div>
+              <span class="text-[11px] text-brand-muted block">Indikasi Harga</span>
+              <strong class="text-sm font-bold text-brand-gold tabular-nums">Mulai Rp1.280.000</strong>
+            </div>
+            <a
+              href="https://wa.me/6285100402001"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-wa-paket="Paket Aqiqah Hemat"
+              aria-label="Tanya detail Paket Aqiqah Hemat via WhatsApp"
+              class="wa-paket-btn bg-brand-canvas hover:bg-brand-ink text-brand-ink hover:text-white text-xs font-semibold px-3.5 py-2 rounded-lg border border-brand-ink/15 transition-colors whitespace-nowrap shrink-0 focus-ring"
+            >
+              Pilih →
+            </a>
+          </div>
+        </article>
+
+        <!-- Paket 2 -->
+        <article
+          data-category="aqiqah"
+          class="paket-item package-card rounded-2xl overflow-hidden flex flex-col justify-between"
+        >
+          <div>
+            <div class="h-48 overflow-hidden bg-brand-surface">
+              <img
+                src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=700&q=80"
+                alt="Paket Favorit 2 Menu — kombinasi sate dan olahan kuah"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Paket Favorit 2 Menu"
+              />
+            </div>
+            <div class="p-5 space-y-2">
+              <p class="text-xs font-medium text-brand-gold">Paket Aqiqah · Paling Diminati</p>
+              <h3 class="font-serif text-xl font-semibold text-brand-ink">
+                Paket Favorit <span class="font-sans font-bold tabular-nums">2</span> Menu
+              </h3>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                Kombinasi dua varian masakan agar hidangan terasa lebih beragam untuk tamu dan kerabat terdekat.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-3 border-t border-brand-ink/10 flex items-center justify-between gap-2">
+            <div>
+              <span class="text-[11px] text-brand-muted block">Indikasi Harga</span>
+              <strong class="text-sm font-bold text-brand-gold tabular-nums">Mulai Rp1.750.000</strong>
+            </div>
+            <a
+              href="https://wa.me/6285100402001"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-wa-paket="Paket Favorit 2 Menu"
+              aria-label="Tanya detail Paket Favorit 2 Menu via WhatsApp"
+              class="wa-paket-btn bg-brand-canvas hover:bg-brand-ink text-brand-ink hover:text-white text-xs font-semibold px-3.5 py-2 rounded-lg border border-brand-ink/15 transition-colors whitespace-nowrap shrink-0 focus-ring"
+            >
+              Pilih →
+            </a>
+          </div>
+        </article>
+
+        <!-- Paket 3 -->
+        <article
+          data-category="aqiqah"
+          class="paket-item package-card rounded-2xl overflow-hidden flex flex-col justify-between"
+        >
+          <div>
+            <div class="h-48 overflow-hidden bg-brand-surface">
+              <img
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80"
+                alt="Paket Lengkap Putra — hidangan aqiqah porsi besar"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Paket Lengkap Putra"
+              />
+            </div>
+            <div class="p-5 space-y-2">
+              <p class="text-xs text-brand-muted">Paket Aqiqah · Porsi Besar</p>
+              <h3 class="font-serif text-xl font-semibold text-brand-ink">Paket Lengkap Putra</h3>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                Dirancang untuk kebutuhan porsi lebih luas (2 ekor / acara besar) dengan persiapan matang dan terkoordinasi.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-3 border-t border-brand-ink/10 flex items-center justify-between gap-2">
+            <div>
+              <span class="text-[11px] text-brand-muted block">Indikasi Harga</span>
+              <strong class="text-sm font-bold text-brand-gold tabular-nums">Hingga Rp3.310.000</strong>
+            </div>
+            <a
+              href="https://wa.me/6285100402001"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-wa-paket="Paket Lengkap Putra"
+              aria-label="Tanya detail Paket Lengkap Putra via WhatsApp"
+              class="wa-paket-btn bg-brand-canvas hover:bg-brand-ink text-brand-ink hover:text-white text-xs font-semibold px-3.5 py-2 rounded-lg border border-brand-ink/15 transition-colors whitespace-nowrap shrink-0 focus-ring"
+            >
+              Pilih →
+            </a>
+          </div>
+        </article>
+
+        <!-- Paket 4 -->
+        <article
+          data-category="box"
+          class="paket-item package-card rounded-2xl overflow-hidden flex flex-col justify-between"
+        >
+          <div>
+            <div class="h-48 overflow-hidden bg-brand-surface">
+              <img
+                src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=80"
+                alt="Nasi Box dan Pelengkap — sajian nasi dan lauk siap bagikan"
+                referrerpolicy="no-referrer"
+                loading="lazy"
+                class="w-full h-full object-cover culinary-img"
+                data-fallback-label="Nasi Box & Pelengkap"
+              />
+            </div>
+            <div class="p-5 space-y-2">
+              <p class="text-xs text-brand-muted">Nasi Box · Siap Bagikan</p>
+              <h3 class="font-serif text-xl font-semibold text-brand-ink">Nasi Box &amp; Pelengkap</h3>
+              <p class="text-xs text-brand-muted leading-relaxed">
+                Kemasan box bersih dan praktis untuk dibagikan ke tetangga, kerabat, maupun acara syukuran kantor.
+              </p>
+            </div>
+          </div>
+          <div class="px-5 pb-5 pt-3 border-t border-brand-ink/10 flex items-center justify-between gap-2">
+            <div>
+              <span class="text-[11px] text-brand-muted block">Jumlah Pesanan</span>
+              <strong class="text-sm font-bold text-brand-gold tabular-nums">Custom Box</strong>
+            </div>
+            <a
+              href="https://wa.me/6285100402001"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-wa-paket="Nasi Box & Pelengkap"
+              aria-label="Tanya detail Nasi Box dan Pelengkap via WhatsApp"
+              class="wa-paket-btn bg-brand-canvas hover:bg-brand-ink text-brand-ink hover:text-white text-xs font-semibold px-3.5 py-2 rounded-lg border border-brand-ink/15 transition-colors whitespace-nowrap shrink-0 focus-ring"
+            >
+              Pilih →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Kalkulator Estimasi Box Interaktif -->
+    <section id="kalkulator" class="scroll-mt-20 max-w-6xl mx-auto px-4 sm:px-6 pb-20">
+      <div class="bg-brand-ink text-brand-canvas rounded-3xl p-6 sm:p-10 grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 space-y-5">
+          <p class="text-xs font-semibold text-brand-goldSoft">Perencanaan Praktis</p>
+          <h2 class="font-serif headline-balance text-3xl sm:text-4xl font-semibold leading-tight text-white">
+            Susun Rencana Box &amp; Kirim ke Admin
+          </h2>
+          <p class="text-sm text-brand-canvas/80 leading-relaxed">
+            Atur perkiraan jumlah nasi box, jenis paket, dan tanggal acara untuk menyiapkan draf pesan otomatis. Harga
+            final dan ketersediaan jadwal dikonfirmasi langsung bersama admin kami.
+          </p>
+
+          <!-- Alur Pemesanan Ringkas -->
+          <ol class="space-y-2.5 pt-2 text-xs text-brand-canvas/80 border-t border-white/10">
+            <li><strong class="text-brand-goldSoft">1.</strong> Pilih paket dan perkiraan jumlah box di samping.</li>
+            <li><strong class="text-brand-goldSoft">2.</strong> Klik kirim ke WhatsApp untuk cek slot tanggal acara.</li>
+            <li><strong class="text-brand-goldSoft">3.</strong> Tim dapur memasak fresh dan mengantar sesuai jadwal.</li>
+          </ol>
+        </div>
+
+        <div class="lg:col-span-7 bg-white text-brand-ink rounded-2xl p-6 space-y-5">
+          <div>
+            <div class="flex justify-between items-center text-sm font-semibold mb-2">
+              <label for="box-slider">Perkiraan Jumlah Nasi Box</label>
+              <span class="text-brand-gold font-bold tabular-nums" id="box-count-label">100 Box</span>
+            </div>
+            <input
+              id="box-slider"
+              type="range"
+              min="25"
+              max="300"
+              step="25"
+              value="100"
+              class="w-full accent-[#9F6A1E] cursor-pointer focus-ring"
+            />
+            <div class="flex justify-between text-[11px] text-brand-muted mt-1 tabular-nums">
+              <span>25 Box</span>
+              <span>150 Box</span>
+              <span>300 Box</span>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="paket-select" class="block text-xs font-semibold text-brand-muted mb-1.5">
+                Pilihan Paket
+              </label>
+              <select
+                id="paket-select"
+                class="w-full rounded-lg border border-brand-ink/15 bg-brand-canvas px-3.5 py-2.5 text-sm font-medium text-brand-ink focus-ring"
+              >
+                <option value="Paket Aqiqah Hemat">Paket Aqiqah Hemat</option>
+                <option value="Paket Favorit 2 Menu" selected>Paket Favorit 2 Menu</option>
+                <option value="Paket Lengkap Putra">Paket Lengkap Putra</option>
+                <option value="Nasi Box & Pelengkap">Nasi Box &amp; Pelengkap</option>
+              </select>
+            </div>
+            <div>
+              <label for="tgl-acara" class="block text-xs font-semibold text-brand-muted mb-1.5">
+                Rencana Tanggal Acara (Opsional)
+              </label>
+              <input
+                id="tgl-acara"
+                type="date"
+                class="w-full rounded-lg border border-brand-ink/15 bg-brand-canvas px-3.5 py-2.5 text-sm font-medium text-brand-ink focus-ring"
+              />
+            </div>
+          </div>
+
+          <!-- Ringkasan Indikasi & Pratinjau Pesan -->
+          <div class="rounded-xl bg-brand-canvas border border-brand-ink/10 p-4 space-y-2">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <span class="text-xs font-medium text-brand-muted">Indikasi Perkiraan Awal</span>
+              <strong id="estimasi-harga" class="text-base font-bold text-brand-ink tabular-nums">
+                Rp2.500.000 – Rp3.100.000
+              </strong>
+            </div>
+            <p id="wa-preview-text" class="text-xs text-brand-muted leading-relaxed">
+              Halo Rumah Aqiqah Semarang, saya ingin konsultasi pesanan Paket Favorit 2 Menu sekitar 100 box. Mohon info detail &amp; ketersediaannya.
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-2.5">
+            <a
+              id="calc-wa-btn"
+              href="https://wa.me/6285100402001"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex-1 inline-flex items-center justify-center gap-2 bg-brand-wa hover:bg-brand-waHover text-white font-semibold text-sm py-3.5 px-5 rounded-lg transition-colors whitespace-nowrap focus-ring"
+            >
+              <span>Kirim Rencana ke WhatsApp</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <button
+              id="copy-wa-btn"
+              type="button"
+              class="inline-flex items-center justify-center bg-brand-surface hover:bg-brand-goldSoft/60 text-brand-ink font-semibold text-sm py-3.5 px-4 rounded-lg border border-brand-ink/10 transition-colors whitespace-nowrap shrink-0 focus-ring"
+            >
+              Salin Draf Pesan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Editorial -->
+    <section id="testimoni" class="scroll-mt-20 bg-white border-y border-brand-ink/10 py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-5">
+          <p class="text-xs font-semibold text-brand-gold">Ulasan Pelanggan</p>
+          <h2 class="font-serif headline-balance text-3xl sm:text-4xl font-semibold text-brand-ink">
+            Dipercaya Keluarga di Semarang
+          </h2>
+          <blockquote class="font-serif italic text-xl sm:text-2xl text-brand-ink/90 leading-relaxed pt-1">
+            “Pelayanannya jelas dan memudahkan persiapan syukuran keluarga. Koordinasi paket serta pengiriman berjalan
+            rapi sehingga kami bisa fokus menyambut tamu.”
+          </blockquote>
+          <div class="pt-3 border-t border-brand-ink/10">
+            <p class="font-semibold text-sm text-brand-ink">Keluarga Pelanggan Layanan Aqiqah — Kota Semarang</p>
+            <p class="text-xs text-brand-muted mt-0.5">Ringkasan reputasi ulasan pelanggan di Google Maps</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="overflow-hidden rounded-3xl border border-brand-ink/10 bg-brand-surface h-72 sm:h-80">
+            <img
+              src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80"
+              alt="Penyajian hidangan kuah rempah untuk acara keluarga"
+              referrerpolicy="no-referrer"
+              loading="lazy"
+              class="w-full h-full object-cover culinary-img"
+              data-fallback-label="Hidangan Acara Keluarga"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi & Peta Google Maps -->
+    <section id="lokasi" class="scroll-mt-20 max-w-6xl mx-auto px-4 sm:px-6 py-20">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-5 space-y-4">
+          <p class="text-xs font-semibold text-brand-gold">Lokasi &amp; Kontak</p>
+          <h2 class="font-serif text-3xl font-semibold text-brand-ink" id="lokasi-heading">
+            Kunjungi &amp; Hubungi Kami
+          </h2>
+          <p class="text-sm text-brand-muted leading-relaxed" id="lokasi-alamat">
+            Jl. Tentara Pelajar No.51, Jomblang, Kec. Candisari, Kota Semarang, Jawa Tengah 50256
+          </p>
+          <div class="text-sm text-brand-ink space-y-1.5 pt-1">
+            <p>
+              <span class="text-brand-muted">WhatsApp:</span>
+              <strong id="lokasi-wa" class="tabular-nums">0851-0040-2001</strong>
+            </p>
+            <p>
+              <span class="text-brand-muted">Jam Layanan:</span>
+              <span id="lokasi-jam">Senin–Minggu (Sesuai Jadwal)</span>
+            </p>
+          </div>
+          <div class="pt-2">
+            <a
+              id="lokasi-wa-btn"
+              href="https://wa.me/6285100402001"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center bg-brand-ink hover:bg-brand-gold text-white text-sm font-semibold px-6 py-3 rounded-lg transition-colors whitespace-nowrap focus-ring"
+            >
+              Chat Admin Sekarang
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 h-72 sm:h-80 rounded-3xl overflow-hidden border border-brand-ink/15 bg-brand-surface">
+          <iframe
+            id="gmaps-iframe"
+            title="Peta lokasi Rumah Aqiqah Semarang di Candisari"
+            src="https://maps.google.com/maps?q=Jl.%20Tentara%20Pelajar%20No.51%2C%20Jomblang%2C%20Candisari%2C%20Semarang&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Gelap -->
+  <footer class="bg-brand-ink text-brand-canvas/80 pt-14 pb-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 border-b border-white/10 text-sm">
+      <div class="space-y-2">
+        <p class="font-serif text-xl font-semibold text-white" id="footer-brand">Rumah Aqiqah Semarang</p>
+        <p class="text-xs text-brand-canvas/65 leading-relaxed" id="footer-desc">
+          Layanan aqiqah dan hidangan acara keluarga di area Candisari serta Kota Semarang.
+        </p>
+      </div>
+
+      <div>
+        <p class="font-semibold text-white text-xs mb-3">Navigasi</p>
+        <ul class="space-y-2 text-xs text-brand-canvas/70">
+          <li><a href="#keunggulan" class="hover:text-brand-goldSoft transition-colors">Keunggulan</a></li>
+          <li><a href="#paket" class="hover:text-brand-goldSoft transition-colors">Koleksi Paket</a></li>
+          <li><a href="#kalkulator" class="hover:text-brand-goldSoft transition-colors">Estimasi Box</a></li>
+          <li><a href="#lokasi" class="hover:text-brand-goldSoft transition-colors">Lokasi</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-white text-xs mb-3">Pilihan Paket</p>
+        <ul class="space-y-2 text-xs text-brand-canvas/70">
+          <li>Paket Aqiqah Hemat</li>
+          <li>Paket Favorit 2 Menu</li>
+          <li>Paket Lengkap Putra</li>
+          <li>Nasi Box &amp; Pelengkap</li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="font-semibold text-white text-xs mb-3">Informasi Kontak</p>
+        <ul class="space-y-2 text-xs text-brand-canvas/70">
+          <li id="footer-alamat">Jl. Tentara Pelajar No.51, Candisari, Semarang</li>
+          <li id="footer-wa" class="tabular-nums">WhatsApp: 0851-0040-2001</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-brand-canvas/55 gap-2">
+      <p id="footer-copy">© 2026 Rumah Aqiqah Semarang. Seluruh hak cipta dilindungi.</p>
+      <p>Katalog &amp; Pemesanan Langsung via WhatsApp</p>
+    </div>
+  </footer>
+
+  <!-- Konfigurasi Terpusat (Single-Config Clone Engine) & Interaktivitas Vanilla JS -->
+  <script>
+    const SITE_CONFIG = {
+      brandName: "Rumah Aqiqah Semarang",
+      pageSubtitle: "Layanan Aqiqah & Hidangan Keluarga",
+      tagline: "Candisari, Kota Semarang",
+      waNumber: "6285100402001",
+      waDisplay: "0851-0040-2001",
+      address: "Jl. Tentara Pelajar No.51, Jomblang, Kec. Candisari, Kota Semarang, Jawa Tengah 50256",
+      shortAddress: "Jl. Tentara Pelajar No.51, Candisari, Semarang",
+      hours: "Senin–Minggu (Sesuai Jadwal)",
+      mapQuery: "Jl. Tentara Pelajar No.51, Jomblang, Candisari, Semarang",
+      footerDesc: "Layanan aqiqah dan hidangan acara keluarga di area Candisari serta Kota Semarang."
+    };
+
+    const PACKAGE_RATES = {
+      "Paket Aqiqah Hemat": { base: 1280000, perBoxMin: 18000, perBoxMax: 22000 },
+      "Paket Favorit 2 Menu": { base: 1750000, perBoxMin: 22000, perBoxMax: 27000 },
+      "Paket Lengkap Putra": { base: 2650000, perBoxMin: 25000, perBoxMax: 32000 },
+      "Nasi Box & Pelengkap": { base: 0, perBoxMin: 24000, perBoxMax: 32000 }
+    };
+
+    function buildWaLink(text, waNumber = SITE_CONFIG.waNumber) {
+      return `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`;
+    }
+
+    function formatRupiah(amount) {
+      return "Rp" + Math.round(amount).toLocaleString("id-ID");
+    }
+
+    function formatIndonesianDate(isoDate) {
+      if (!isoDate || !/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) return "";
+      const months = [
+        "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+        "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+      ];
+      const parts = isoDate.split("-");
+      const year = Number(parts[0]);
+      const monthIdx = Number(parts[1]) - 1;
+      const day = Number(parts[2]);
+      if (monthIdx < 0 || monthIdx > 11 || !day || !year) return "";
+      return `${day} ${months[monthIdx]} ${year}`;
+    }
+
+    function calculateEstimate(paket, qty) {
+      const rate = PACKAGE_RATES[paket] || PACKAGE_RATES["Paket Favorit 2 Menu"];
+      const safeQty = Math.max(25, Math.min(300, Number(qty) || 100));
+      const minTotal = rate.base + safeQty * rate.perBoxMin;
+      const maxTotal = rate.base + safeQty * rate.perBoxMax;
+      return { minTotal, maxTotal, label: `${formatRupiah(minTotal)} – ${formatRupiah(maxTotal)}` };
+    }
+
+    function buildCalculatorMessage(brandName, paket, qty, isoDate) {
+      const formattedDate = formatIndonesianDate(isoDate);
+      const tglPart = formattedDate ? ` pada tanggal ${formattedDate}` : "";
+      return `Halo ${brandName}, saya ingin konsultasi pesanan ${paket} sekitar ${qty} box${tglPart}. Mohon info detail & ketersediaannya.`;
+    }
+
+    function createFallbackSvg(label) {
+      const safeLabel = (label || "Sajian Kuliner").replace(/[<>&"']/g, "");
+      const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F1ECE3"/><stop offset="100%" stop-color="#E5D8C3"/></linearGradient></defs><rect width="600" height="400" fill="url(#g)"/><circle cx="300" cy="175" r="56" fill="none" stroke="#9F6A1E" stroke-width="2" opacity="0.5"/><text x="300" y="183" text-anchor="middle" fill="#9F6A1E" font-family="Georgia,serif" font-size="28" font-weight="600">RA</text><text x="300" y="268" text-anchor="middle" fill="#575049" font-family="sans-serif" font-size="16" font-weight="600">${safeLabel}</text></svg>`;
+      return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+    }
+
+    // 1. Hydrate seluruh elemen teks & link dari SITE_CONFIG (agar kloning UMKM baru cukup edit 1 objek)
+    (function applySiteConfig() {
+      const year = new Date().getFullYear();
+      const setText = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+      };
+
+      document.title = `${SITE_CONFIG.brandName} — ${SITE_CONFIG.pageSubtitle}`;
+      setText("brand-name", SITE_CONFIG.brandName);
+      setText("brand-tagline", SITE_CONFIG.tagline);
+      setText("lokasi-alamat", SITE_CONFIG.address);
+      setText("lokasi-wa", SITE_CONFIG.waDisplay);
+      setText("lokasi-jam", SITE_CONFIG.hours);
+      setText("footer-brand", SITE_CONFIG.brandName);
+      setText("footer-desc", SITE_CONFIG.footerDesc);
+      setText("footer-alamat", SITE_CONFIG.shortAddress);
+      setText("footer-wa", `WhatsApp: ${SITE_CONFIG.waDisplay}`);
+      setText("footer-copy", `© ${year} ${SITE_CONFIG.brandName}. Seluruh hak cipta dilindungi.`);
+
+      const navWa = document.getElementById("nav-wa-btn");
+      const heroWa = document.getElementById("hero-wa-btn");
+      const lokasiWa = document.getElementById("lokasi-wa-btn");
+      const gmaps = document.getElementById("gmaps-iframe");
+
+      if (navWa) navWa.href = buildWaLink(`Halo ${SITE_CONFIG.brandName}, saya ingin konsultasi paket & jadwal.`);
+      if (heroWa) heroWa.href = buildWaLink(`Halo ${SITE_CONFIG.brandName}, saya ingin cek ketersediaan jadwal & pilihan paket.`);
+      if (lokasiWa) lokasiWa.href = buildWaLink(`Halo ${SITE_CONFIG.brandName}, saya ingin bertanya informasi lengkap layanan.`);
+      if (gmaps) {
+        gmaps.src = `https://maps.google.com/maps?q=${encodeURIComponent(SITE_CONFIG.mapQuery)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+        gmaps.title = `Peta lokasi ${SITE_CONFIG.brandName}`;
+      }
+
+      document.querySelectorAll(".wa-paket-btn").forEach((btn) => {
+        const namaPaket = btn.getAttribute("data-wa-paket");
+        btn.href = buildWaLink(`Halo ${SITE_CONFIG.brandName}, saya tertarik menanyakan detail ${namaPaket}.`);
+      });
+    })();
+
+    // 2. Fallback gambar otomatis (Zero-Broken-Image Policy)
+    document.querySelectorAll(".culinary-img").forEach((img) => {
+      img.addEventListener("error", () => {
+        if (img.dataset.fallbackApplied) return;
+        img.dataset.fallbackApplied = "true";
+        img.src = createFallbackSvg(img.dataset.fallbackLabel || img.alt);
+      });
+    });
+
+    // 3. Mobile Navigation Drawer
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileNavPanel = document.getElementById("mobile-nav-panel");
+    const menuIconOpen = document.getElementById("menu-icon-open");
+    const menuIconClose = document.getElementById("menu-icon-close");
+
+    function setMobileMenu(open) {
+      if (!mobileMenuBtn || !mobileNavPanel) return;
+      mobileMenuBtn.setAttribute("aria-expanded", String(open));
+      mobileMenuBtn.setAttribute("aria-label", open ? "Tutup menu navigasi" : "Buka menu navigasi");
+      mobileNavPanel.classList.toggle("hidden", !open);
+      if (menuIconOpen) menuIconOpen.classList.toggle("hidden", open);
+      if (menuIconClose) menuIconClose.classList.toggle("hidden", !open);
+    }
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener("click", () => {
+        const isOpen = mobileMenuBtn.getAttribute("aria-expanded") === "true";
+        setMobileMenu(!isOpen);
+      });
+    }
+
+    document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+      link.addEventListener("click", () => setMobileMenu(false));
+    });
+
+    // 4. Filter Kategori Paket
+    const filterTabs = document.querySelectorAll(".filter-tab");
+    const paketItems = document.querySelectorAll(".paket-item");
+
+    filterTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const filter = tab.getAttribute("data-filter");
+
+        filterTabs.forEach((t) => {
+          const active = t === tab;
+          t.setAttribute("aria-pressed", String(active));
+          t.classList.toggle("bg-brand-ink", active);
+          t.classList.toggle("text-white", active);
+          t.classList.toggle("text-brand-muted", !active);
+          t.classList.toggle("hover:text-brand-ink", !active);
+        });
+
+        paketItems.forEach((item) => {
+          const cat = item.getAttribute("data-category");
+          item.classList.toggle("hidden", !(filter === "all" || cat === filter));
+        });
+      });
+    });
+
+    // 5. Kalkulator Estimasi Box + Pratinjau & Salin Pesan WA
+    const slider = document.getElementById("box-slider");
+    const boxLabel = document.getElementById("box-count-label");
+    const paketSelect = document.getElementById("paket-select");
+    const tglAcara = document.getElementById("tgl-acara");
+    const estimasiHarga = document.getElementById("estimasi-harga");
+    const waPreviewText = document.getElementById("wa-preview-text");
+    const calcWaBtn = document.getElementById("calc-wa-btn");
+    const copyWaBtn = document.getElementById("copy-wa-btn");
+
+    if (tglAcara) {
+      const todayIso = new Date().toISOString().split("T")[0];
+      tglAcara.min = todayIso;
+    }
+
+    let currentWaMessage = "";
+
+    function updateCalcLink() {
+      const qty = slider.value;
+      const paket = paketSelect.value;
+      const isoDate = tglAcara.value;
+      const estimate = calculateEstimate(paket, qty);
+
+      currentWaMessage = buildCalculatorMessage(SITE_CONFIG.brandName, paket, qty, isoDate);
+      boxLabel.textContent = `${qty} Box`;
+      estimasiHarga.textContent = estimate.label;
+      waPreviewText.textContent = currentWaMessage;
+      calcWaBtn.href = buildWaLink(currentWaMessage);
+    }
+
+    slider.addEventListener("input", updateCalcLink);
+    paketSelect.addEventListener("change", updateCalcLink);
+    tglAcara.addEventListener("change", updateCalcLink);
+    updateCalcLink();
+
+    if (copyWaBtn) {
+      copyWaBtn.addEventListener("click", async () => {
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            await navigator.clipboard.writeText(currentWaMessage);
+          }
+        } catch (_err) {
+          // Clipboard permission fallback handled silently
+        }
+        const original = copyWaBtn.textContent;
+        copyWaBtn.textContent = "Pesan Tersalin";
+        setTimeout(() => {
+          copyWaBtn.textContent = original;
+        }, 1800);
+      });
+    }
+  </script>
+</body>
+
+</html>
